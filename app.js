@@ -103,7 +103,7 @@ const getTemperature = async () => { //função para obter a temperatura máxima
 
 att.addEventListener('click', () => {
 
-    while (container.firstChild) {
+    while (container.firstChild.tagName === "DIV") {
 
         container.removeChild(container.firstChild);
     }
